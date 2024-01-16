@@ -2,7 +2,7 @@
 
 import { ConfigProvider } from 'antd'
 
-const Provider = () => {
+const Provider = ({ children }) => {
 	return (
 		<ConfigProvider
 			theme={{
