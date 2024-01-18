@@ -6,8 +6,10 @@ import Navbar from '@/components/navbar/navbar'
 export default function Home() {
 	return (
 		<main>
-			<Navbar />
-			<Header />
+			<div className='bg-silver'>
+				<Navbar />
+				<Header />
+			</div>
 		</main>
 	)
 }
