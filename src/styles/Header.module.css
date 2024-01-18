@@ -1,72 +1,66 @@
 /* styles/Header.module.css */
 .heroContainer {
-    width: Fill (1,002.34px);
-    height: Hug (416.95px);
-    padding: 66.82px, 100.23px, 66.82px, 100.23px;
-    gap: 72.39px;
-    
-    
+	width: Fill (1, 002.34px);
+	height: Hug (416.95px);
+	padding: 66.82px, 100.23px, 66.82px, 100.23px;
+	gap: 72.39px;
 }
 
-.heroFrame{
-    width: Fill (457.32px);
-    height: Hug (192.9px);
-    gap: 22.27px;
-
+.heroFrame {
+	width: Fill (457.32px);
+	height: Hug (192.9px);
+	gap: 22.27px;
 }
 
 .slide {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .heroTitle {
-    font-family: Inter;
-    font-size: 45px;
-    font-weight: 600;
-    line-height: 53px;
-    letter-spacing: 0em;
-    text-align: left;
-    color:rgba(77, 77, 77, 1);
-    margin-bottom: 22.27px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.eightYears{
-    color: #4CAF4F;
-  }
-
-.heroText{
-    font-family: Inter;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(113, 113, 113, 1);
-    margin-bottom: 22.27px;
-
-
-
+.heroTitle {
+	font-family: Inter;
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 53px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: rgba(77, 77, 77, 1);
+	margin-bottom: 22.27px;
 }
 
-.heroButton{
-    width: Hug (89.55px);
-    height: Hug (36.49px);
-    padding: 10px;
-    border-radius: 2.78px;
-    gap: 6.96px;
-    background: rgba(76, 175, 79, 1);
-    color: white;
-    display: flex;
-    flex: start;
+.eightYears {
+	color: #4caf4f;
 }
-.heroButtonLabel{
-    width: 45px;
-    height: 17px;
-    font-family: Inter;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
+
+.heroText {
+	font-family: Inter;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 17px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: rgba(113, 113, 113, 1);
+	margin-bottom: 22.27px;
+}
+
+.heroButton {
+	width: Hug (89.55px);
+	height: Hug (36.49px);
+	padding: 10px;
+	border-radius: 2.78px;
+	gap: 6.96px;
+	background: rgba(76, 175, 79, 1);
+	color: white;
+	display: flex;
+	flex: start;
+}
+.heroButtonLabel {
+	width: 45px;
+	height: 17px;
+	font-family: Inter;
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 17px;
+	letter-spacing: 0em;
 }

@@ -20,7 +20,10 @@ const Navbar = () => {
 				alt='Gira Tech Logo'
 				priority
 			/>
-			<Flex gap={50} align='center'>
+			<Flex
+				gap={50}
+				align='center'
+			>
 				{routes.map(({ href, pathname }) => {
 					return (
 						<Link
@@ -39,7 +42,10 @@ const Navbar = () => {
 				<Button type='link'>
 					<Link href='/login'>Login</Link>
 				</Button>
-				<Button type='primary' className='!rounded-md'>
+				<Button
+					type='primary'
+					className='!rounded-md'
+				>
 					<Link href='/sign-up'>Sign up</Link>
 				</Button>
 			</Flex>
