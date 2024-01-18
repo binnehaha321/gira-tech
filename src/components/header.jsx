@@ -11,7 +11,7 @@ const Header = () => {
 	return (
 		<header className='container'>
 			<Carousel
-				showThumbs={true}
+				showThumbs={false}
 				showArrows={true}
 			>
 				<Flex
