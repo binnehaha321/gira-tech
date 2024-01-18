@@ -1,13 +1,19 @@
 import Image from 'next/image'
 
-import Header from '@/components/header/header.jsx'
 import Navbar from '@/components/navbar/navbar'
+import Header from '@/components/header'
+import Clients from '@/components/clients/clients'
+import Community from '@/components/community/community'
 
 export default function Home() {
 	return (
 		<main>
-			<Navbar />
-			<Header />
+			<div className='bg-silver'>
+				<Navbar />
+				<Header />
+			</div>
+			<Clients />
+			<Community />
 		</main>
 	)
 }
