@@ -11,7 +11,7 @@ function Content({ srcPic, title, content }) {
 				<Image
 					style={{
 						height: '433px',
-                        width: 'auto'
+						width: 'auto'
 					}}
 					width={442}
 					height={433}

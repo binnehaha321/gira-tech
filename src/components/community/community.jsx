@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Flex, Row, Col } from 'antd'
+import { Flex } from 'antd'
 
 import { frames } from './frames'
 
@@ -8,7 +8,7 @@ export default function Community() {
 		<Flex
 			vertical
 			className='mt-7'
-			rootClassName='container space-y-4'
+			rootClassName='container py-8'
 		>
 			<Flex
 				vertical

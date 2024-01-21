@@ -1,9 +1,11 @@
 import Image from 'next/image'
 
 import Navbar from '@/components/navbar/navbar'
-import Header from '@/components/header'
+import Header from '@/components/header/header'
 import Clients from '@/components/clients/clients'
 import Community from '@/components/community/community'
+import Customer from '@/components/customer/customer'
+import Community2 from '@/components/community2/community2'
 import Content from '@/components/content'
 import Achievements from '@/components/achievements'
 import Footer from '@/components/footer/footer'
@@ -17,6 +19,8 @@ export default function Home() {
 			</div>
 			<Clients />
 			<Community />
+			<Customer />
+			<Community2 />
 			<Content
 				srcPic='/images/content/content-1.png'
 				title='The unseen of spending three years at Pixelgrade'
