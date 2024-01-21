@@ -1,6 +1,6 @@
 import React from 'react'
-import { Flex } from 'antd'
 import Image from 'next/image'
+import { Flex, Button } from 'antd'
 
 import data from './data'
 
@@ -13,9 +13,9 @@ export default function Community2() {
 				</p>
 				<p className='font-normal text-base text-grey w-[628px] h-[72px] m-auto text-center mt-2'>
 					The Nexcent blog is the best place to read about the latest membership
-					insights, trends and more. See who&rsquo;s joining the community, read about
-					how our community are increasing their membership income and lot&rsquo;s
-					more.​
+					insights, trends and more. See who&rsquo;s joining the community, read
+					about how our community are increasing their membership income and
+					lot&rsquo;s more.​
 				</p>
 			</div>
 			<Flex
@@ -29,19 +29,20 @@ export default function Community2() {
 					>
 						<Image
 							src={community.image}
-							alt=''
+							alt={community.content}
 							width={368}
 							height={286}
 						/>
-						<div className='absolute bottom-0 w-[317px] h-[176px] bg-white left-1/2 transform -translate-x-1/2 shadow-lg '>
+						<div className='absolute bottom-0 w-[317px] h-[176px] p-4 rounded-lg bg-silver left-1/2 transform -translate-x-1/2 shadow-lg text-center'>
 							<p className='w-[285px] h-[84px] m-auto text-grey font-semibold text-xl text-center'>
 								{community.content}
 							</p>
-							<button className='w-[285px] h-[44px] text-center'>
-								<span className='text-primary font-semibold text-xl'>
-									Read more &rarr;
-								</span>
-							</button>
+							<Button
+								type='link'
+								className='!text-xl !font-semibold'
+							>
+								Read more &rarr;
+							</Button>
 						</div>
 					</div>
 				))}

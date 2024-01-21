@@ -1,13 +1,15 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
-import { Flex } from 'antd'
+import { Flex, Button } from 'antd'
+
 import { data } from './data'
-import { useState } from 'react'
+
 export default function Customer() {
 	const [currentCustomer, setCurrentCustomer] = useState(0)
 	const { image, content, name, organization, logos } = data[currentCustomer]
+
 	return (
 		<div className='container mt-12'>
 			<Flex>
@@ -56,11 +58,12 @@ export default function Customer() {
 							justify='center'
 							align='center'
 						>
-							<button>
-								<span className='font-semibold text-xl text-primary'>
-									Meet all customers &rarr;
-								</span>
-							</button>
+							<Button
+								type='link'
+								className='!font-semibold !text-xl'
+							>
+								Meet all customers &rarr;
+							</Button>
 						</Flex>
 					</Flex>
 				</div>
