@@ -7,6 +7,7 @@ import Community from '@/components/community/community'
 import Content from '@/components/content'
 import Achievements from '@/components/achievements'
 import Footer from '@/components/footer/footer'
+
 export default function Home() {
 	return (
 		<main>

@@ -1,18 +1,15 @@
 import { Flex, Col, Row } from 'antd'
 import { MemberIcon, ClubIcon, EventBookIcon, PaymentIcon } from './icons'
 
+const icons = [
+	{ icon: <MemberIcon />, number: '2,245,341', label: 'Member' },
+	{ icon: <ClubIcon />, number: '46,328', label: 'Clubs' },
+	{ icon: <EventBookIcon />, number: '828,867', label: 'Event Bookings' },
+	{ icon: <PaymentIcon />, number: '1,926,436', label: 'Payments' }
+]
+
 function Achievements() {
-	const icons = [
-		{ icon: <MemberIcon />, number: '2,245,341', label: 'Member' },
-		{ icon: <ClubIcon />, number: '46,328', label: 'Clubs' },
-		{ icon: <EventBookIcon />, number: '828,867', label: 'Event Bookings' },
-		{ icon: <PaymentIcon />, number: '1,926,436', label: 'Payments' }
-	]
 	return (
-		// <Flex
-		// 	align='center'
-		// 	className='container my-[64px]'
-		// >
 		<div className='bg-silver '>
 			<Row
 				justify='space-between'
@@ -34,36 +31,12 @@ function Achievements() {
 					</Flex>
 				</Col>
 				<Col span={12}>
-					{/* <Flex
-						wrap
-						gap={30}
-						className='w-full flex-wrap'
-					>
-						{icons.map((item, index) => {
-							return (
-								<Flex
-									key={index}
-									gap={16}
-									align='center'
-								>
-									{item.icon}
-									<Flex vertical xs={24}>
-										<p className='font-bold text-[28px]'>{item.number}</p>
-										<p className='text-grey'>{item.label}</p>
-									</Flex>
-								</Flex>
-							)
-						})}
-					</Flex> */}
 					<Row gutter={[0, 40]}>
 						{icons.map((item, index) => (
 							<Col
 								key={index}
 								xs={24}
 								sm={12}
-								md={12}
-								lg={12}
-								xl={12}
 							>
 								<Flex
 									key={index}
@@ -71,7 +44,10 @@ function Achievements() {
 									align='center'
 								>
 									{item.icon}
-									<Flex vertical xs={24}>
+									<Flex
+										vertical
+										xs={24}
+									>
 										<p className='font-bold text-[28px]'>{item.number}</p>
 										<p className='text-grey'>{item.label}</p>
 									</Flex>

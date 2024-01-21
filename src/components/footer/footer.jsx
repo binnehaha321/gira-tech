@@ -1,26 +1,30 @@
 import Image from 'next/image'
 import { Flex } from 'antd'
+
 import { logos } from './logos'
+
 import Demo from './demo'
+
+const listItem = [
+	{
+		title: 'Company',
+		listItem: ['About us', 'Blog', 'Contact us', 'Pricing', 'Testimonials']
+	},
+	{
+		title: 'Support us',
+		listItem: [
+			'Help center',
+			'Terms of service',
+			'Legal',
+			'Privacy policy',
+			'Status'
+		]
+	}
+]
+
 function Footer() {
-	const listItem = [
-		{
-			title: 'Company',
-			listItem: ['About us', 'Blog', 'Contact us', 'Pricing', 'Testimonials']
-		},
-		{
-			title: 'Support us',
-			listItem: [
-				'Help center',
-				'Terms of service',
-				'Legal',
-				'Privacy policy',
-				'Status'
-			]
-		}
-	]
 	return (
-		<div>
+		<>
 			<Demo />
 			<div className='bg-secondary py-[64px]'>
 				<Flex
@@ -91,7 +95,7 @@ function Footer() {
 							</p>
 							<div className='relative rounded-lg h-10 '>
 								<input
-									className='w-full h-full opacity-20  px-2 rounded-lg placeholder-gray-500'
+									className='w-full h-full px-2 rounded-lg bg-[#515b60] text-[#d9dbe1] placeholder-[#d9dbe1] border-none'
 									placeholder='Your name address'
 								/>
 								<Image
@@ -107,7 +111,7 @@ function Footer() {
 					</Flex>
 				</Flex>
 			</div>
-		</div>
+		</>
 	)
 }
 
