@@ -20,9 +20,9 @@ module.exports = {
 				center: true,
 				screens: {
 					sm: '640px',
-					md: '768px',
+					md: '767.98px',
 					xmd: '840px',
-					lg: '990px',
+					lg: '991.98px',
 					xlg: '1152px',
 					xl: '1280px',
 					'2xl': '1536px'

@@ -4,14 +4,16 @@ import { Flex, Button } from 'antd'
 
 import data from './data'
 
-export default function Community2() {
+export default function CommunityBelow() {
 	return (
 		<div className='container mt-[48px]'>
 			<div>
-				<p className='font-semibold text-4xl text-center text-D_grey'>
+				<p className={`font-semibold text-4xl text-center text-D_grey`}>
 					Caring is the new marketing
 				</p>
-				<p className='font-normal text-base text-grey w-[628px] h-[72px] m-auto text-center mt-2'>
+				<p
+					className={`font-normal text-base text-grey w-[628px] h-[72px] mx-auto text-center mt-2 w-dvw ${'lg:w-fit lg:mb-8'}`}
+				>
 					The Nexcent blog is the best place to read about the latest membership
 					insights, trends and more. See who&rsquo;s joining the community, read
 					about how our community are increasing their membership income and
@@ -20,7 +22,7 @@ export default function Community2() {
 			</div>
 			<Flex
 				justify='space-around'
-				className='mt-4'
+				className={`pt-16 responsive-flex ${'lg:pt-4'}`}
 			>
 				{data.map((community) => (
 					<div
